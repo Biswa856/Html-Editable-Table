@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editable HTML Table</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        table {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        td {
+            width: 100px;
+           
+        }
+        input {
+            width: 100px;
+            padding: 20px;
+            border: none;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div id="editable_Table_Container">
+        <table>
+            <thead>
+                <tr>
+                    <th>MONTH 1</th>
+                </tr>
+            </thead>
+            <tbody id="root">
+                
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="editableTable.js"></script>
+</body>
+
+</html>
